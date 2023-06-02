@@ -9,6 +9,10 @@ body {
   height: 100%;
 }
 
+:root {
+  --text-color: white;
+}
+
 body {
   background: url(../assets/bg-mobile.jpg);
   background-repeat: no-repeat;
@@ -18,7 +22,8 @@ body {
 
 body * {
   font-family: "Inter", sans-serif;
-  color: white;
+  color: var(--text-color);
+  background-color: white;
 }
 
 #container {
@@ -69,7 +74,7 @@ ul li a {
 
 ul li a:hover {
   background-color: rgba(255, 255, 255, 0.05);
-  border: 1.5px solid white;
+  border: 1.5px solid var(--text-color);
 }
 
 /*   Icones   */
