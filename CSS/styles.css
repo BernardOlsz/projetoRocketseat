@@ -1,3 +1,4 @@
+/*----------RESET TA PÁGINA---------- */
 * {
   margin: 0;
   padding: 0;
@@ -9,27 +10,33 @@ body {
   height: 100%;
 }
 
+/*----------DARK MODE----------*/
+
 :root {
   --text-color: white;
-  --background: url(../assets/bg-mobile.jpg);
+  --background: url(../assets/bg-desktop.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(255, 255, 255, 0.02);
   --social-color: rgba(255, 255, 255, 0.2);
   --rocket-hover: rgba(255, 255, 255, 0.5);
-  --switch: url(../assets/sun.svg);
+  --switch: url(../assets/moon-stars.svg);
 }
+
+/*----------LIGHT MODE----------*/
 
 .light {
   --text-color: black;
-  --background: url(../assets/bg-mobile-light.jpg);
+  --background: url(../assets/bg-desktop-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --social-color: rgba(0, 0, 0, 0.1);
   --rocket-hover: rgba(0, 0, 0, 0.5);
-  --switch: url(../assets/moon-stars.svg);
+  --switch: url(../assets/sun.svg);
 }
+
+/*----------  BODY  ----------*/
 
 body {
   background: var(--background);
@@ -43,11 +50,15 @@ body * {
   color: var(--text-color);
 }
 
+/*----------  CONTAINER   ----------*/
+
 #container {
   width: 360px;
   margin: 56px auto 0;
   padding: 0 24px;
 }
+
+/*----------    PROFILE   ----------*/
 
 #profile {
   text-align: center;
@@ -64,6 +75,8 @@ body * {
   margin-top: 8px;
 }
 
+/*----------    BOTÃO DARK/LIGHT MODE   ----------*/
+
 #switch button {
   width: 32px;
   height: 32px;
@@ -74,6 +87,8 @@ body * {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+/*----------    LISTA   ----------*/
 
 #list ul {
   list-style: none;
@@ -104,7 +119,7 @@ ul li a:hover {
   border: 1.5px solid var(--text-color);
 }
 
-/*   Icones   */
+/*----------    SOCIAL LINKS    ----------*/
 
 #social {
   display: flex;
@@ -114,14 +129,12 @@ ul li a:hover {
   justify-content: center;
 }
 
-/*teste*/
-
 #social a {
   display: flex;
   justify-content: center;
   text-align: center;
   padding: 12px;
-  transition: background-color 0.3s;
+  transition: background-color 1s;
   border-radius: 50%;
 }
 #social a:hover {
@@ -129,12 +142,17 @@ ul li a:hover {
   padding: 12px;
 }
 
+/*----------    FOOTER    ----------*/
+
 footer {
   padding: 24px 0;
   text-align: center;
 }
 
+#linkRocket {
+  transition: color 0.5s;
+}
+
 #linkRocket:hover {
   color: var(--rocket-hover);
-  transition: color 0.3s;
 }
