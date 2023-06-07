@@ -36,6 +36,11 @@ body {
   --switch: url(../assets/sun.svg);
 }
 
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
 /*----------  BODY  ----------*/
 
 body {
@@ -84,8 +89,8 @@ body * {
 }
 
 #switch button {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   background-color: white;
   border: none;
   border-radius: 50%;
@@ -95,6 +100,7 @@ body * {
   position: absolute;
   z-index: 1;
   top: 50%;
+  left: 0;
   transform: translateY(-50%);
 }
 
