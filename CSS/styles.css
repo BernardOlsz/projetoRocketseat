@@ -80,6 +80,15 @@ body * {
   margin-top: 8px;
 }
 
+.instagram {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.instagram:hover {
+  color: var(--rocket-hover);
+}
+
 /*----------    BOTÃO DARK/LIGHT MODE   ----------*/
 
 #switch {
@@ -102,7 +111,7 @@ body * {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  transition: left 0.2s;
+  transition: left 0.1s;
 }
 
 #switch span {
